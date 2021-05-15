@@ -4,22 +4,8 @@
 _get_repolink () {
     local regex
     regex='(https?)://github.com/.+/.+'
-    if [[ $UPSTREAM_REPO == "TamilBotOld" ]]
     then
-        echo "aHR0cHM6Ly9naXRodWIuY29tL0lWRVRSSS9UYW1pbEJvdC9hcmNoaXZlL21hc3Rlci56aXA=" | base64 -d
-    elif [[ $UPSTREAM_REPO == "TamilBotNew" ]]
-    then
-        echo "aHR0cHM6Ly9naXRodWIuY29tL0ltU2FyYXZhbmFrcmlzaC9UYW1pbEJvdC9hcmNoaXZlL21hc3Rlci56aXA=" | base64 -d
-    elif [[ $UPSTREAM_REPO =~ $regex ]]
-    then
-        if [[ $UPSTREAM_REPO_BRANCH ]]
-        then
-            echo "${UPSTREAM_REPO}/archive/${UPSTREAM_REPO_BRANCH}.zip"
-        else
-            echo "${UPSTREAM_REPO}/archive/master.zip"
-        fi
-    else
-        echo "aHR0cHM6Ly9naXRodWIuY29tL0lWRVRSSS9UYW1pbEJvdC9hcmNoaXZlL21hc3Rlci56aXA=" | base64 -d
+        echo "aHR0cHM6Ly9naXRodWIuY29tL1RhbWlsQm90cy9UYW1pbFVzZXJCb3Q=" | base64 -d
     fi
 }
 
