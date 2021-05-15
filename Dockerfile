@@ -1,7 +1,7 @@
-FROM ivetri/TamilBot:alpine
+FROM tamilbots/TamilBot:alpine
 
 #clonning repo 
-RUN git clone https://github.com/Ivetri/TamilBot.git /root/userbot
+RUN git clone https://github.com/tamilbots/TamilBot.git /root/userbot
 #working directory 
 WORKDIR /root/userbot
 
