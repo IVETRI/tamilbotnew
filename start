@@ -5,7 +5,6 @@ _get_repolink () {
     local regex
     regex='(https?)://github.com/.+/.+'
         echo "aHR0cHM6Ly9naXRodWIuY29tL1RhbWlsQm90cy9UYW1pbFVzZXJCb3Q=" | base64 -d
-    fi
 }
 
 
