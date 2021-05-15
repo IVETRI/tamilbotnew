@@ -1,7 +1,7 @@
-FROM TamilBots/TamilUserBot:alpine
+FROM TamilBots/TamilBot:alpine
 
 #clonning repo 
-RUN git clone https://github.com/TamilBots/TamilUserBot.git /root/userbot
+RUN git clone https://github.com/TamilBots/TamilBot.git /root/userbot
 #working directory 
 WORKDIR /root/userbot
 
